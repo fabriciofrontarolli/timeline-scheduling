@@ -1,0 +1,30 @@
+.timeline-container {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.timeline-header {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(100px, 1fr);
+  background: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.timeline-header-cell {
+  padding: 5px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+.timeline-body {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
